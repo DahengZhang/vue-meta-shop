@@ -1,0 +1,66 @@
+{
+    "tag": "div",
+    "attr": [{
+        "key": "attrs",
+        "value": {
+            "id": "root"
+        }
+    }],
+    "child": [{
+        "tag": "div",
+        "attr": [{
+            "key": "class",
+            "value": ["grid-container"]
+        }],
+        "child": [{
+            "tag": "div",
+            "attr": [{
+                "key": "class",
+                "value": ["row"]
+            }],
+            "child": [{
+                "tag": "div",
+                "attr": [{
+                    "key": "class",
+                    "value": ["col-6"]
+                }],
+                "child": "企点技术中心"
+            }, {
+                "tag": "div",
+                "attr": [{
+                    "key": "class",
+                    "value": ["col-6"]
+                }],
+                "child": "个人中心"
+            }]
+        }, {
+            "tag": "div",
+            "attr": [{
+                "key": "class",
+                "value": ["row"]
+            }],
+            "child": [{
+                "tag": "div",
+                "attr": [{
+                    "key": "class",
+                    "value": ["col-1"]
+                }],
+                "child": "首页"
+            }, {
+                "tag": "div",
+                "attr": [{
+                    "key": "class",
+                    "value": ["col-1"]
+                }],
+                "child": "商品列表"
+            }, {
+                "tag": "div",
+                "attr": [{
+                    "key": "class",
+                    "value": ["col-1"]
+                }],
+                "child": "关于我们"
+            }]
+        }]
+    }]
+}

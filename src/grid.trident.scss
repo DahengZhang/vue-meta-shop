@@ -1,0 +1,19 @@
+.grid-container {
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.row::before, .row::after {
+    clear: both;
+}
+
+[class*='col-'] {
+    box-sizing: border-box;
+    float: left;
+}
+
+@for $i from 1 to 12 {
+    .col-#{$i} {
+        width: calc(100% / 12 * #{$i});
+    }
+}

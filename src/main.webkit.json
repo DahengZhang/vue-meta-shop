@@ -1,0 +1,30 @@
+{
+    "tag": "div",
+    "attr": {
+        "attrs": {
+            "id": "root"
+        }
+    },
+    "child": [{
+        "tag": "bs-header",
+        "attr": {
+            "class": ["grid-container"],
+            "style": {
+                "height": "100px",
+                "background-color": "#4c90f7"
+            }
+        },
+        "child": [{
+            "tag": "div",
+            "child": "22"
+        }, {
+            "tag": "div",
+            "child": "22",
+            "attr": {
+                "style": {
+                    "text-align": "right"
+                }
+            }
+        }]
+    }]
+}
