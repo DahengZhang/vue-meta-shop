@@ -1,27 +1,37 @@
 <template>
     <div class="page-tree">
-        This is Tree
-        <textarea v-model="json" ></textarea>
+        <h3 class="page-tree-title">结构树</h3>
+        <tree-item :ast="ast" @changeAST="astChange" :isRoot="true" />
     </div>
 </template>
 
 <script>
+import TreeItem from './tree-item'
+
 export default {
     props: {
-        value: {
+        ast: {
             type: Object,
             default: () => {}
         }
     },
-    computed: {
-        json: {
-            get() {
-                return this.value
-            },
-            set(v) {
-                this.$emit('input', JSON.parse(v))
-            }
+    data() {
+        return {}
+    },
+    methods: {
+        astChange(v, indexs) {
+            this.$emit('changeAST', v, indexs)
         }
+    },
+    components: {
+        TreeItem
     }
 }
 </script>
+
+<style lang="scss">
+.page-tree {
+    background-color: aliceblue;
+    overflow-x: scroll;
+}
+</style>
